@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item android:id="@+id/blank"
+        android:icon="@drawable/running_man"
+        android:title="blank"
+        app:showAsAction="ifRoom"
+        />
+
+    <item android:id="@+id/sorting"
+        android:icon="@drawable/running_man"
+        android:title="Sort Fasion"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/acending"
+
+                android:title="acending"
+                app:showAsAction="never"
+                />
+
+            <item android:id="@+id/decending"
+
+                android:title="decending"
+                app:showAsAction="never"
+                />
+        </menu>
+    </item>
+
+    <item android:id="@+id/move"
+
+        android:title="Steps_Count"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/timepick"
+
+        android:title="Pick a TIME to Alert"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/abtus"
+
+        android:title="ABOUT US"
+        app:showAsAction="never"
+        />
+
+</menu>

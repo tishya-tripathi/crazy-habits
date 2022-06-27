@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StepsCounter">
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        app:cpb_background_progressbar_color="#b6bbd8"
+        app:cpb_background_progressbar_width="20dp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progress_max="5000"
+        app:cpb_progressbar_color="#3f51b5"
+        app:cpb_progressbar_width="20dp"
+        app:cpb_round_border="true" />
+
+    <TextView
+        android:id="@+id/stepstaken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stepstakenoutof"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/stepstaken"
+        android:text="/5000"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/urdoing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="YOU ARE DOING : "
+        android:textColor="@color/teal_200"
+        android:textSize="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doinginfo"
+        android:hint="CURRENTLY"
+        android:layout_below="@id/urdoing"
+        android:textColor="#D10E2A"
+        android:textSize="40dp" />
+</RelativeLayout>

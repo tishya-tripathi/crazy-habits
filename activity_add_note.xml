@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9E6363"
+    android:orientation="vertical"
+    tools:context=".AddNoteActivity"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/titletext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Add a new Habit"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/titleinput"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#3000B0ff"
+            android:hint="Title"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="#fff" />
+        <!--            android:textColorHint="fff" -->
+
+
+        <EditText
+            android:id="@+id/descinput"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#3000B0ff"
+            android:gravity="top"
+            android:hint="description"
+            android:lines="10"
+            android:padding="10dp"
+            android:textColor="#fff"    />
+        <!--            android:textColorHint="fff"-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:gravity="center">
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:id="@+id/savebtn"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="40dp"
+        android:textStyle="italic"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+
